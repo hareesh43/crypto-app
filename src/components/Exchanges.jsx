@@ -1,6 +1,5 @@
 import React from "react";
 import { Collapse, Row, Col, Typography, Avatar } from "antd";
-import { CaretRightOutlined } from "@ant-design/icons";
 import millify from "millify";
 import HTMLReactParser from "html-react-parser";
 
@@ -8,13 +7,9 @@ import { useGetExchangesDataQuery } from "../services/cryptoApi";
 import Loader from "./Loader";
 
 const { Panel } = Collapse;
-const { Title, Text } = Typography;
+const {  Text } = Typography;
 
-const text = `
-  A dog is a type of domesticated animal.
-  Known for its loyalty and faithfulness,
-  it can be found as a welcome guest in many households across the world.
-`;
+
 
 export default function Exchanges() {
   const { data, isFetching } = useGetExchangesDataQuery();
