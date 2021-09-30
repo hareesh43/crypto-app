@@ -165,7 +165,7 @@ a:hover{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 40px;
+    gap: 20px;
 }
 
 .stats-container h2{
@@ -377,4 +377,8 @@ width: 70%;
     flex-direction: column;
     padding: 20px;
     align-items: center;
+}
+
+.exchnage-title{
+    margin-left: 10px;
 }
