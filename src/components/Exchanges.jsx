@@ -9,11 +9,9 @@ import Loader from "./Loader";
 const { Panel } = Collapse;
 const {  Text } = Typography;
 
-
-
 export default function Exchanges() {
   const { data, isFetching } = useGetExchangesDataQuery();
-  console.log("data = ", data);
+ 
   const exchnageData = data?.data?.exchanges;
 
   if (isFetching) return <Loader />;
@@ -50,7 +48,6 @@ export default function Exchanges() {
                   <Col span={6}>{millify(data.marketShare)}</Col>
                 </Row>
               }
-              key="1"
               className="site-collapse-custom-panel"
             >
               <p>{HTMLReactParser(data?.description || "")}</p>
